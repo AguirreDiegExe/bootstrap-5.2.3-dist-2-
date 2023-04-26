@@ -1,0 +1,408 @@
+#Primer-Nav{
+    background-color: #31343a;
+}
+
+#Element{
+    color: #f8f9fa;
+}
+
+#Element:hover{
+    color: #9e9fa1;
+}
+
+#Element-Special{
+    color: #0f7206;
+}
+
+#Element-Special:hover{
+    color: #19db08;
+}
+
+#Nav-Container-One{
+    display: flex;
+    align-items: center;
+}
+
+#Nav-Text{
+    display: flex;
+    gap: 15px;
+}
+
+#Img-CodoACodo{
+    width: 30%;
+    height: 30%;
+}
+
+#Img-CodoACodo:hover{
+    width: 35%;
+    height: 35%;
+    transition: 0.5s;
+}
+
+#Text-One-Nav{
+    font-size: 150%;
+    color: #f8f9fa;
+    font-weight: 500;
+}
+
+
+/*Estelizacion del resto de la pagina*/
+
+#Showcase{
+    background-image: url(TpMediaImg/ba1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*se va a utilizar medida vh , que es mas felxible y sirve para que el diseño sea responsive*/
+    height: 100vh;
+}
+
+#Showcase #Shadow{
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
+
+.container-flex{
+    width: 90%; 
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#C-One{
+    align-self: center;
+}
+
+
+.text-C-One{
+    color: #f8f9fa;
+    text-align: right;
+}
+
+.text-C-Two{
+    font-size:100%;
+    color: #f8f9fa;
+    text-align: right;
+    width: 75vh;
+    height: 25vh;
+}
+
+/*MEDIA QUERIE*/
+
+@media screen and (max-width:700px){
+    .text-C-Two{
+        text-align: center;
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+#C-Two{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#Button-Showcase{
+    width: 26vh;
+    height: 6vh;
+}
+
+#Button-Showcase:hover{
+    background-color: #19db08;
+    border: 2px solid #19db08;
+    transition: 0.5s;
+}
+
+
+/*estelizacion Zona de los oradores */
+
+#Oradores-Container{
+    display: block;
+    width: 100%;
+    height: 110vh;
+}
+
+#Spacing-Oradores{
+    height: 120vh;
+    padding: 2% 0% 0% 0%;
+}
+
+#Presentation{
+    display: block;
+}
+
+#Oradores-Presentation{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+#First-text-Oradores{
+    text-align: center;
+    font-size: 100%;
+    font-weight:500;
+}
+
+#Second-text-Oradores{
+    text-align: center;
+}
+
+#Second-text-Oradores:hover{
+    color: #fffb00;
+    cursor:default;
+    transition: 0.5s;
+}
+
+/*seccion de los lenguajes*/
+
+#Zona_Speakers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+#Spiker{
+    width: 26%;
+    height: 4vh;
+    text-align: center;
+    border-radius: 7%;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Spiker-React{
+    width: 17%;
+    height: 4vh;
+    text-align: center;
+    border-radius: 7%;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Spiker:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+
+#Spiker-React:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+
+@media screen and (max-width:1200px){
+    #Spiker{
+        width: 70%;
+        font-size: 64%;
+        font-weight:700;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    #Spiker-React{
+        width: 70%;
+        font-size: 80%;
+        font-weight: 700;
+    }
+}
+
+
+.card{
+    /*NUEVO CONTENIDO*/
+    width: 30%;
+    border-radius: 5%;
+}
+
+.card-title{
+    font-weight:600;
+}
+
+.card-text{
+    font-size: 85%;
+}
+
+/*estilizacion media querie card-body*/
+
+@media screen and (max-width:850px){
+    .card-text{
+        font-size: 77%;
+    }
+}
+
+/*Estilizacion del resto de la pagina */
+#Comprar-Tickets{
+    display: flex;
+}
+
+.Carousel-text{
+    background-color: #25262b;
+    width: 50%;
+    height: 68.5vh;
+}
+
+#C-Second-Container-Carousel{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    padding: 2%;
+}
+
+#First-Carousel-text{
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.Carousel{
+    width: 50%;
+}
+
+#Img-Carousel-1{
+    height: 68.5vh;
+}
+
+#Img-Carousel-2{
+    width: 100%;
+    height: 68.5vh;
+}
+
+#Img-Carousel-3{
+    width: 100%;
+    height: 68.5vh;
+}
+
+#Text-One-Carousel{
+    text-align: left;
+    font-size: 90%;
+}
+
+/*estelizacion del formulario*/
+
+#Formulario{
+    height: 71vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Presentation-Form{
+    display: block;
+}
+
+#Text-Form-1{
+    font-size: 110%;
+    text-align: center;
+}
+
+#Text-Form-2{
+    font-size: 200%;
+    text-align: center;
+}
+
+#Text-Form-2:hover{
+    color:#fbff00;
+    transition: 0.5s;
+    cursor: default;
+}
+
+#Text-Form-3{
+    text-align: center;
+}
+
+#Specific-Span{
+    text-decoration: underline;
+    /*TEXT DECORATION STYLE PARA DARLE UN ESTILO ESPECIFICO AL TEXTO QUE SE ENCUENTRA EN ESA PARTE */
+    text-decoration-style: dotted;
+}
+
+#Specific-Span:hover{
+    color: #e4e710;
+    transition: 0.5s;
+}
+
+
+#First-Contianer-Form{
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+
+.First-Part-Formulario{
+    display: flex;
+    height: 8vh;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+#INPUT{
+    width: 50%;
+    height: 5vh;
+}
+
+#TEXTAREA{
+    width: 100%;
+    height: 16vh;
+}
+
+#Part-Second-Form{
+    display: block;
+    justify-content: center;
+}
+
+#Button-Form{
+    background-color: #6edb08;
+    color: #f8f9fa;
+    width: 70%;
+}
+
+#Text-Help{
+    height: 7vh;
+}
+
+
+#Button-Form{
+    font-size: 120%;
+    width: 100%;
+}
+
+#Button-Form:hover{
+    background-color: #ff7b00;
+    font-weight: 600;
+}
+
+/*seccion del FOOTER*/
+
+#Container-Footer{
+    background-image: linear-gradient(to right, #002d47, #00535a);
+    display: flex;
+    justify-content: center;
+}
+
+#Nav-Footer-Two{
+    display: flex;
+    gap: 48px;
+}
+
+
+#Element-Footer{
+    color: #f8f9fa;
+}
+
+#Element-Footer:hover{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
